@@ -10,7 +10,6 @@ router.post('/create_user', (req, res) => {
             return;
         }
         res.status(200).send('Successfully added into database')
-
     })
 });
 
