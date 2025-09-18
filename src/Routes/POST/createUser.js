@@ -9,7 +9,7 @@ router.post('/create_user', (req, res) => {
         if(err){
             console.log('Error has occurred', err.message);
             res.status(501).send(err.message);
-            return
+            return;
         }
         console.log(results);
         res.status(200).send('user has been successfully created');
