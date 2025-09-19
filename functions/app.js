@@ -1,6 +1,6 @@
 const serverless = require('serverless-http');
-const app = require('../src/index.js');
+const app = require('../src/index');
 
 const handler = serverless(app);
 
-module.exports = handler;
+module.exports.handler = handler;
